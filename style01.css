@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: #62374e;
+}
+.quadradao{
+    display: grid;
+    grid-template-areas: 
+    "q1 q2"
+    "q3 q4";
+    padding: 108px 176px;
+}
+.quadrado1{
+    background-color: #fdc57b;
+    width: 100px;
+    height: 100px;
+    grid-area: q1;
+}
+.quadrado2{
+    background-color: #fdc57b;
+    width: 100px;
+    height: 100px;
+    grid-area: q2;
+    place-self: start end;
+}
+.quadrado3{
+    background-color: #fdc57b;
+    width: 100px;
+    height: 100px;
+    grid-area: q3;
+    place-self: end start;
+}
+.quadrado4{
+    background-color: #fdc57b;
+    width: 100px;
+    height: 100px;
+    grid-area: q4;
+    place-self: end end;
+}
