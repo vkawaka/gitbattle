@@ -1,24 +1,41 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body{
     background-color: #6592CF;
-}
-.circulo{
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    background-color: #243D83;
-}
-.retangulo{
-    width: 24px;
-    height: 88px;
-    background-color: #243D83;
-    justify-self: center;
-}
-.boneco1{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 50vh;
+    padding-right: 8vw;
+    gap: 6vw;
+}
+p{
+    width: 24px;
+    height: 150px;
+    background-color: #243D83;
+    position: relative;
+}
+p::before{
+    content: '';
+    background-color: #243D83;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+p:nth-child(3){
+    margin-right: 20vw;
+}
+p:nth-child(1)::before{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #EEB850;
+    position: absolute;
+    top: -10vh;
+    z-index: -1;
 }
