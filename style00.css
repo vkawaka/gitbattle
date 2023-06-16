@@ -39,7 +39,7 @@ a{
     body{
         background-image: url(./img/index-mobile.png);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
     a{
         display: flex;
