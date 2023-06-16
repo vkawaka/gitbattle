@@ -39,8 +39,8 @@ a{
     body{
         background-image: url(./img/index-mobile.png);
         background-size: cover;
-        background-repeat: repeat;
-    }
+        background-repeat: repeat-y;
+        }
     a{
         display: flex;
         text-decoration: none;
